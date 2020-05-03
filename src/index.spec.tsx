@@ -7,6 +7,11 @@ export default {
         'should be a class': () => {
             expect(App).to.be.a(Function);
         },
+        'should be able to do stuff': () => {
+            const app = new App();
+
+            expect(app.doStuff).to.be.a(Function);
+        },
         'should do stuff': () => {
             const message = 'MESSAGE_TEXT';
             const stub = sinon.stub(console, 'log');
