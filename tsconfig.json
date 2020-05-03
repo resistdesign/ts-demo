@@ -8,10 +8,16 @@
     "strictNullChecks": true,
     "removeComments": false,
     "moduleResolution": "node",
-    "jsx": "preserve",
-    "esModuleInterop": true
+    "jsx": "react",
+    "esModuleInterop": true,
+    "declaration": true,
+    "declarationMap": true
   },
+  "include": [
+    "./src/**/*.tsx"
+  ],
   "exclude": [
+    "./src/**/*.spec.tsx",
     "node_modules",
     "bower_components",
     "dist"
